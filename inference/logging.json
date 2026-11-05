@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "disable_existing_loggers": true,
+  "handlers": {"null": {"class": "logging.NullHandler"}},
+  "root": {"handlers": ["null"], "level": "CRITICAL"},
+  "loggers": {
+    "vllm": {"handlers": ["null"], "propagate": false, "level": "CRITICAL"},
+    "uvicorn": {"handlers": ["null"], "propagate": false, "level": "CRITICAL"},
+    "uvicorn.access": {"handlers": ["null"], "propagate": false, "level": "CRITICAL"},
+    "uvicorn.error": {"handlers": ["null"], "propagate": false, "level": "CRITICAL"}
+  }
+}

@@ -1,0 +1,12 @@
+# Optional: apply AFTER the initial download. Requires a CNI enforcing NetworkPolicy.
+# A subsequent initContainer can validate the cache without any egress.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: offline-inference
+  namespace: llm-cpu
+spec:
+  podSelector:
+    matchLabels: {app: vllm-cpu}
+  policyTypes: [Egress]
+  egress: []

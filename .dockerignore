@@ -1,0 +1,9 @@
+.git
+.venv
+.secrets
+**/__pycache__
+**/*.pyc
+tests
+docs
+reports
+*.zip

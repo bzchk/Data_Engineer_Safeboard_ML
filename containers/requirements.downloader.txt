@@ -1,0 +1,2 @@
+# Standard-library downloader. pip is the only distribution inherited from this image.
+pip==25.0.1

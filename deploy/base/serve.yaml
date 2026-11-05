@@ -1,0 +1,6 @@
+dtype: float32
+max-model-len: 1024
+max-num-seqs: 1
+max-num-batched-tokens: 256
+enable-prefix-caching: false
+enable-chunked-prefill: true
